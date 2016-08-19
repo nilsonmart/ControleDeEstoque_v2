@@ -8,9 +8,10 @@ namespace ViewProject
     public partial class FormFornecedor : Form
     {
         private FornecedorController controller = new FornecedorController();
-        public FormFornecedor()
+        public FormFornecedor(FornecedorController controller)
         {
             InitializeComponent();
+            this.controller = controller;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -92,6 +93,7 @@ namespace ViewProject
             }
         }
 
+        //Método para o botão cancelar.
         private void button3_Click(object sender, EventArgs e)
         {
             ClearControls();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControllerProject;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,11 @@ namespace ViewProject
 {
     public partial class FormProduto : Form
     {
-        public FormProduto()
+
+        private ProdutoController controller = new ProdutoController();
+        public FormProduto(ProdutoController controller)
         {
+            this.controller = controller;
             InitializeComponent();
         }
     }

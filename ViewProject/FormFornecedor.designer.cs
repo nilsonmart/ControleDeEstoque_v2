@@ -30,7 +30,6 @@ namespace ViewProject
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFornecedor));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -44,8 +43,6 @@ namespace ViewProject
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvFornecedores = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedores)).BeginInit();
@@ -128,7 +125,7 @@ namespace ViewProject
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.6063F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.3937F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button4, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
@@ -152,7 +149,7 @@ namespace ViewProject
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(225, 3);
+            this.button4.Location = new System.Drawing.Point(224, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(66, 22);
             this.button4.TabIndex = 4;
@@ -164,7 +161,7 @@ namespace ViewProject
             // 
             this.button2.Location = new System.Drawing.Point(74, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 22);
+            this.button2.Size = new System.Drawing.Size(66, 22);
             this.button2.TabIndex = 2;
             this.button2.Text = "Gravar";
             this.button2.UseVisualStyleBackColor = true;
@@ -172,7 +169,7 @@ namespace ViewProject
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(147, 3);
+            this.button3.Location = new System.Drawing.Point(146, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(72, 22);
             this.button3.TabIndex = 3;
@@ -193,34 +190,11 @@ namespace ViewProject
             this.dgvFornecedores.TabIndex = 5;
             this.dgvFornecedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFornecedores_CellContentClick);
             // 
-            // label4
-            // 
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(290, 352);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 36);
-            this.label4.TabIndex = 6;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label4.UseMnemonic = false;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 352);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "®2016";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
             // FormFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 395);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvFornecedores);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormFornecedor";
@@ -231,7 +205,6 @@ namespace ViewProject
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedores)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -250,7 +223,5 @@ namespace ViewProject
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dgvFornecedores;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
     }
 }
