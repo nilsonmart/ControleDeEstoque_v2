@@ -35,9 +35,14 @@ namespace ViewProject
             };
             fornecedor = (txtId.Text == string.Empty ? this.controller.Insert(fornecedor) :
                 this.controller.Update(fornecedor));
+            GridReload();
+            ClearControls();
+        }
+
+        private void GridReload()
+        {
             dgvFornecedores.DataSource = null;
             dgvFornecedores.DataSource = this.controller.GetAll();
-            ClearControls();
         }
 
         //Método que limpa seleção do gridview e dos controles
@@ -68,6 +73,7 @@ namespace ViewProject
             txtCNPJ.Text = dgvFornecedores.CurrentRow.Cells[2].Value.ToString();
         }
 
+        //Método que remove
         private void button4_Click(object sender, EventArgs e)
         {
             if(txtId.Text == string.Empty)
@@ -76,12 +82,12 @@ namespace ViewProject
             }
             else
             {
+                
                 this.controller.Remove(new Fornecedor()
                 {
                     Id = new Guid(txtId.Text)
                 });
-                dgvFornecedores.DataSource = null;
-                dgvFornecedores.DataSource = this.controller.GetAll();
+                GridReload();
                 ClearControls();
             }
         }
