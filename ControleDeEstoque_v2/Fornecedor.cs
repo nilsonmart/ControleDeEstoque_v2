@@ -30,7 +30,7 @@ namespace ModelProject
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return GetHashCode();
         }
     }
 }

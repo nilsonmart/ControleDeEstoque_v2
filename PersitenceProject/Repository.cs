@@ -91,6 +91,12 @@ namespace PersistenceProject
             return this.notasEntrada;
         }
 
+        public NotaEntrada GetNotaEntradaById(Guid Id)
+        {
+            var notaEntrada = this.notasEntrada[this.notasEntrada.IndexOf(new NotaEntrada() { Id = Id })];
+            return notaEntrada;
+        }
+
         //Método que atualiza os dados de fornecedor.
         public NotaEntrada UpdateNotaEntrada(NotaEntrada notaEntrada)
         {
